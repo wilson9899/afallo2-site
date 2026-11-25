@@ -15,19 +15,23 @@ hugoblox:
     # Site name - shown in navbar, footer, copyright, and browser title by default
     name: "AllO2"
     # Legal entity for copyright notices (defaults to name if not set)
-    organization: ""
+    organization: "AllO2 International Co., Ltd"
     # Schema.org type for structured data
     type: organization # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "碳市場情報與碳權採購顧問"
+    tagline: "碳權顧問服務、自然碳匯專案開發與土地永續評估"
     # Site meta description for search engines and social sharing
-    description: "AllO2 每日追蹤國際碳市場、碳權標準與政策動態，整理成繁體中文快訊與週報，協助台灣企業掌握碳權採購與減碳決策所需的資訊。"
+    description: "AllO2 奧森氧整合科技專注於自然碳匯領域，提供土地永續利用與碳權開發的專業解決方案。"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""
       links:
+        - icon: brands/instagram
+          url: https://www.instagram.com/allo2_2020/
         - icon: brands/facebook
           url: https://www.facebook.com/profile.php?id=61571855224086
+        - icon: brands/youtube
+          url: https://www.youtube.com/channel/UChk_j94mKLTWlDDQ1aYPivw
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -40,8 +44,8 @@ hugoblox:
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: "emerald" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: "sky"
+      primary: "#2e8b57" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+      secondary: "#1e88c8"
       neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
     colors_light: {}
@@ -88,7 +92,7 @@ hugoblox:
     # Stick to top on scroll
     sticky: true
     # Show logo in navbar
-    show_logo: false
+    show_logo: true
     # Show site title text in navbar
     show_title: true
     # Override navbar title (defaults to identity.name)
@@ -99,7 +103,7 @@ hugoblox:
     search: true
     theme_toggle: true
     theme_picker: false
-    language_switcher: false
+    language_switcher: true
     # Call-to-action button
     cta:
       enable: false
@@ -118,7 +122,7 @@ hugoblox:
     show_tagline: true
     # Override footer title (defaults to identity.name)
     title: ""
-    language_switcher: false
+    language_switcher: true
     # Show social icons from identity.social.links
     show_social: true
     # Custom footer text (HTML supported)
@@ -130,7 +134,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}."
+    notice: "© {year} AllO2 International Co., Ltd"
     license:
       type: custom # cc | custom
       allow_derivatives: false

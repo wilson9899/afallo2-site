@@ -1,4 +1,64 @@
-# 預設語言：繁體中文
 zh-hant:
   locale: zh-Hant
-  label: 繁體中文
+  label: 中文
+  weight: 1
+  title: AllO2 奧森氧整合科技
+  menus:
+    main:
+      - {name: 首頁, url: /, weight: 10}
+      - {name: 關於AllO2, url: /home-2/, weight: 20}
+      - {name: 服務與專案, url: /what-we-do/, weight: 30}
+      - {name: 永續實踐, url: /sustainability-in-action/, weight: 40}
+      - {name: 合作機會, url: /explore-opportunities/, weight: 50, identifier: opp}
+      - {name: 專案開發商, url: /project-developer/, parent: opp, weight: 1}
+      - {name: 地主, url: /landowner/, parent: opp, weight: 2}
+      - {name: 投資人, url: /impact-investors/, parent: opp, weight: 3}
+      - {name: 觀點與動態, url: /blog/, weight: 60}
+      - {name: 市場情報, weight: 70, identifier: intel}
+      - {name: 市場動態, url: /news/, parent: intel, weight: 1}
+      - {name: 市場週報, url: /reports/weekly/, parent: intel, weight: 2}
+      - {name: 碳市場掃描, url: /reports/scan/, parent: intel, weight: 3}
+      - {name: 聯繫我們, url: /contact-us/, weight: 80}
+    footer:
+      - {name: AllO2, weight: 10, identifier: f1}
+      - {name: 關於AllO2, url: /home-2/, parent: f1, weight: 1}
+      - {name: 服務與專案, url: /what-we-do/, parent: f1, weight: 2}
+      - {name: 永續實踐, url: /sustainability-in-action/, parent: f1, weight: 3}
+      - {name: 聯繫我們, url: /contact-us/, parent: f1, weight: 4}
+      - {name: 內容, weight: 20, identifier: f2}
+      - {name: 觀點與動態, url: /blog/, parent: f2, weight: 1}
+      - {name: 市場動態, url: /news/, parent: f2, weight: 2}
+      - {name: 市場週報, url: /reports/weekly/, parent: f2, weight: 3}
+      - {name: 碳市場掃描, url: /reports/scan/, parent: f2, weight: 4}
+      - {name: 法律, weight: 30, identifier: f3}
+      - {name: 隱私權政策, url: /privacy/, parent: f3, weight: 1}
+en:
+  locale: en-us
+  label: English
+  weight: 2
+  title: AllO2
+  params:
+    hugoblox:
+      identity:
+        tagline: Nature-based carbon solutions across ASEAN
+        description: AllO2 is executing nature-based carbon offset projects across ASEAN countries to advance sustainability.
+  menus:
+    main:
+      - {name: Home, url: /en/, weight: 10}
+      - {name: About AllO2, url: /en/home-2/, weight: 20}
+      - {name: What We Do, url: /en/what-we-do/, weight: 30}
+      - {name: Sustainability in Action, url: /en/sustainability-in-action/, weight: 40}
+      - {name: Explore Opportunities, url: /en/explore-opportunities/, weight: 50, identifier: opp}
+      - {name: Project Developer, url: /en/project-developer/, parent: opp, weight: 1}
+      - {name: Landowner, url: /en/landowner/, parent: opp, weight: 2}
+      - {name: Impact Investors, url: /en/impact-investors/, parent: opp, weight: 3}
+      - {name: Insights and News, url: /en/blog/, weight: 60}
+      - {name: Contact Us, url: /en/contact-us/, weight: 80}
+    footer:
+      - {name: AllO2, weight: 10, identifier: f1}
+      - {name: About AllO2, url: /en/home-2/, parent: f1, weight: 1}
+      - {name: What We Do, url: /en/what-we-do/, parent: f1, weight: 2}
+      - {name: Sustainability in Action, url: /en/sustainability-in-action/, parent: f1, weight: 3}
+      - {name: Contact Us, url: /en/contact-us/, parent: f1, weight: 4}
+      - {name: Legal, weight: 30, identifier: f3}
+      - {name: Privacy Policy, url: /en/privacy/, parent: f3, weight: 1}

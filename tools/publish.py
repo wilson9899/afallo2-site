@@ -72,7 +72,13 @@ def docx_text(path):
         return ""
 
 
+# 公司正式名稱，經 wilson 確認可公開顯示，比對前先移除
+EXEMPT = ["奧森氧整合科技"]
+
+
 def find_hits(text, words):
+    for e in EXEMPT:
+        text = text.replace(e, "")
     low = text.lower()
     return sorted({w for w in words if w.lower() in low})
 

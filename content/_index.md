@@ -1,122 +1,98 @@
 ---
-title: 'AllO2 碳市場情報'
-date: 2026-11-25
+title: 'AllO2 奧森氧整合科技'
+date: 2024-11-07
 type: landing
 
 sections:
   - block: hero
     content:
-      eyebrow: AllO2 碳市場情報
-      title: 每天讀懂國際[碳市場]
-      text: 我們每日追蹤國際碳市場、碳權標準與各國政策，整理成繁體中文的快訊、週報與專題，協助台灣企業掌握碳權採購與減碳決策所需的資訊。
+      eyebrow: 'AllO2 奧森氧整合科技'
+      title: '以自然為本的[碳權專案]'
+      text: '碳權顧問服務、自然碳匯專案開發與土地永續評估'
       primary_action:
-        text: 看今日市場動態
-        url: /news/
-        icon: newspaper
+        text: '關於AllO2'
+        url: /home-2/
       secondary_action:
-        text: 閱讀市場週報
-        url: /reports/weekly/
-        icon: document-text
+        text: '聯繫我們'
+        url: /contact-us/
     design:
+      css_class: dark
+      background:
+        image:
+          filename: hero-bg.jpg
+          filters:
+            brightness: 0.55
+          size: cover
+          position: center
       spacing:
-        padding: ['6rem', 0, '4rem', 0]
+        padding: ['8rem', 0, '8rem', 0]
 
-  - block: features
-    id: features
+  - block: markdown
     content:
-      subtitle: 內容更新頻率
-      title: 四種內容，各自準時更新
-      text: 網站內容由固定排程產出，排程完成後會自動同步到網站。
-      items:
-        - name: 市場動態（每日）
-          icon: bolt
-          description: 每天早上整理國際碳市場的新聞標題與重點，並附上原文連結。
-        - name: 市場週報（每週一）
-          icon: document-text
-          description: 回顧上週價格、交易、標準與政策的重要變化，可下載 Word 版本。
-        - name: 碳市場掃描（每週四）
-          icon: magnifying-glass
-          description: 聚焦台灣企業關心的國外碳權認可準則、新方法學與新專案類型。
-        - name: 文章（每週五）
-          icon: pencil-square
-          description: 以淺顯的方式說明碳權採購、碳中和宣告與相關實務問題。
-    design:
-      layout: grid
-      css_class: "bg-gray-50 dark:bg-gray-900/50"
+      text: |
+        ## 關於AllO2
 
-  - block: collection
-    id: news
-    content:
-      title: 最新市場動態
-      count: 5
-      filters:
-        folders:
-          - news
-      archive:
-        enable: true
-        text: 所有市場動態
-        link: /news/
-    design:
-      view: date-title-summary
-      columns: 1
+        在國際碳市場持續擴張、氣候法規日益完善的趨勢下，碳權不再只是環保工具，更是企業營運策略、資產配置與土地價值重塑的重要關鍵。  
+        想佈局自然碳匯，卻不確定從何開始？手中土地具備潛力，卻無法轉化為碳權價值？面對政策壓力與綠色轉型，卻缺乏在地實務支援或碳權購買經驗？  
+        AllO2 奧森氧整合科技專注於自然碳匯領域，提供土地永續利用與碳權開發的專業解決方案。從土地潛力分析、方法學選擇，到符合法規與國際標準的完整專案規劃與執行。協助您轉化土地潛力，創造具永續價值的碳資產。
 
-  - block: collection
-    id: weekly
-    content:
-      title: 市場週報
-      count: 3
-      filters:
-        folders:
-          - reports/weekly
-      archive:
-        enable: true
-        text: 所有週報
-        link: /reports/weekly/
-    design:
-      view: card
-      columns: 3
+        [ 瞭解更多 ](/home-2/)
 
-  - block: collection
-    id: scan
-    content:
-      title: 碳市場掃描
-      count: 3
-      filters:
-        folders:
-          - reports/scan
-      archive:
-        enable: true
-        text: 所有掃描報告
-        link: /reports/scan/
-    design:
-      view: card
-      columns: 3
+        ![](/wp-content/uploads/2024/11/photo-06.jpg)
+
+        ![](/wp-content/uploads/2024/11/photo-07.jpg)
+
+        ![](/wp-content/uploads/2024/11/photo-09.jpg)
+
+        ![](/wp-content/uploads/2024/11/photo-08.jpg)
+
+        ![](/wp-content/uploads/2024/11/photo-10.jpg)
+
+        ## 服務與專案
+
+        AllO2提供專業碳權顧問服務，幫助地主、企業及投資人從規劃到實施，確保專案符合國際標準，實現綠色轉型並提升資本價值。我們亦提供碳權購買與碳抵消服務，助企業達成減碳目標。
+
+        ### **專案開發與碳權顧問服務**
+
+        我們協助客戶依照國際標準(如 Verra、Gold Standard)完成碳權申請全流程，涵蓋土地條件評估、碳吸存量量測、專案設計文件撰寫、審查與核發。確保每一環節都符合合規性要求，並提供透明的投資流程與市場認可。我們另提供碳權購買與碳抵消服務，幫助企業快速購得符合要求的自願型碳權，達成減碳承諾，並有助於提升企業的環境責任表現。所有碳權交易均依據國際認證標準，確保每一筆交易的真實性與有效性。
+
+        ### 在地執行整合與永續策略設計
+
+        依託東南亞在地團隊，我們整合碳盤查專家、林業顧問與政府機構，解決專案執行中的各項挑戰。透過科學方法與 SDGs 指標，我們量身設計專案策略，聚焦社區共創、生物多樣性保護與土地永續利用，實現長期復育與環境價值提升。
+
+        [ 瞭解更多 ](/what-we-do/)
+
+        ## 我們的碳權專案
+
+        AllO2 正著手執行位於緬甸勃固地區的造林(Afforestation, Reforestation, and Revegetation)專案，這是我們在東南亞地區推動自然碳匯解決方案的核心專案之一。隨著專案的進行，我們也在評估其他具有潛力的碳專案，期望進一步擴大我們的環境影響力。
+
+        通過這些專案，我們不僅力求實現碳中和，還致力於促進生物多樣性、恢復生態系統，並與當地社區密切合作，共同支持聯合國永續發展目標(SDGs)。AllO2 堅定致力於在2050年達成碳中和目標，並運用創新解決方案應對氣候變遷挑戰。
+
+        [ 瞭解更多 ](/what-we-do/#Our-Project)
+
+        ![](/wp-content/uploads/2024/12/P3-06.png)
+
+        ## 永續實踐：AllO2的承諾
+
+        我們位於緬甸的造林專案致力於為當地社會與環境帶來長遠的永續發展。此專案不僅為當地居民，尤其是女性，提供就業機會，並促進青少年與成人的技能發展，進而推動地方經濟成長。此外，我們積極推行防止歧視與性騷擾的政策，確保創造公平、安全且具包容性的工作環境。專案同時考量水資源的使用效率，減少水資源短缺，並鼓勵永續建築實踐。AllO2的專案與全球永續發展目標相契合，不僅促進環境復育，也改善當地社區的福祉。
+
+        [![](/wp-content/uploads/2025/06/7-07-1024x576.jpg)](/sustainability-in-action/)
+
+        [ 瞭解更多 ](/sustainability-in-action/)
+
 
   - block: collection
-    id: blog
     content:
-      title: 文章
+      title: '觀點與動態'
       count: 3
       filters:
         folders:
           - blog
       archive:
         enable: true
-        text: 所有文章
+        text: '所有文章'
         link: /blog/
     design:
       view: card
       columns: 3
-
-  - block: cta-card
-    id: contact
-    content:
-      title: 想討論碳權採購或減碳規劃？
-      text: 歡迎透過 Facebook 專頁與我們聯繫。
-      button:
-        text: 前往 Facebook 專頁
-        url: https://www.facebook.com/profile.php?id=61571855224086
-    design:
-      card:
-        css_class: "bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 text-white shadow-2xl"
 ---

@@ -1,5 +1,4 @@
 ---
-title: 文章
-summary: 碳權採購與減碳實務的說明文章。
+title: 觀點與動態
 view: card
 ---
