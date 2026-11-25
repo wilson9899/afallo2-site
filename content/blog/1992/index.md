@@ -7,7 +7,7 @@ categories: ["Unique Insights"]
 tags: []
 ---
 
-回顧自願性碳市場的歷程，就像是在觀看一部關於「自願的氣候行動如何逐步成為全球共識」的發展紀錄片。這不只是規則與技術的演進，更是一場理念、制度與實務案例相互激盪的過程。從最初少數企業主動抵換排放的實驗性嘗試，演變成今天企業、政府、NGO共同參與、追求高品質碳權與公信力的主流市場，自願性碳市場演變的每一步都伴隨著全球對氣候危機認知的深化與行動模式的革新。  
+回顧自願性碳市場的歷程，就像是在觀看一部關於「自願的氣候行動如何逐步成為全球共識」的發展紀錄片。這不只是規則與技術的演進，更是一場理念、制度與實務案例相互激盪的過程。從最初少數企業主動抵換排放的實驗性嘗試，演變成今天企業、政府、NGO共同參與、追求高品質碳信用與公信力的主流市場，自願性碳市場演變的每一步都伴隨著全球對氣候危機認知的深化與行動模式的革新。  
   
 **強制性碳市場與自願性碳市場**
 
@@ -33,7 +33,7 @@ tags: []
 
 在環境研究組織–世界資源機構（World Resource Institute, WRI）的建議下，美國電力公司Applied Energy Services (AES)前往瓜地馬拉種樹，嘗試用植樹造林的方式抵銷火力發電過程中所排放的溫室氣體。根據當時參與該計畫的馬克·特雷克斯勒博士（Dr. Mark Trexler）表示，WRI提出此建議的初衷，其實是作為在正式法規框架出現之前的「臨時措施」，目的是讓企業和電力業者開始正視碳排放議題並做出些承諾。
 
-出乎意料的是，這項行動不僅成為減碳專案的先驅，也象徵碳抵換機制從概念走向實務，為後續碳權標準與交易制度的建立奠定重要基礎。
+出乎意料的是，這項行動不僅成為減碳專案的先驅，也象徵碳抵換機制從概念走向實務，為後續碳信用標準與交易制度的建立奠定重要基礎。
 
 **VCM規則、標準與工具初現雛形**
 
@@ -46,10 +46,10 @@ tags: []
 - **黃金標準（Gold Standard, GS）**
 - **美國氣候行動儲備（Climate Action Reserve, CAR）**
 
-雖然它們分別由不同組織主導，擁有各自的專案方法學與驗證架構，但皆致力於強化碳權的環境誠信，成為現今VCM中最主流、被廣泛採用的標準體系之一。
+雖然它們分別由不同組織主導，擁有各自的專案方法學與驗證架構，但皆致力於強化碳信用的環境誠信，成為現今VCM中最主流、被廣泛採用的標準體系之一。
 
 這個階段雖仍帶有實驗性質，但已初步奠定VCM的制度雛形與運作邏輯，為後續更成熟的市場機制與多元專案形式鋪路。
 
 接下來，VCM將進入一個鞏固與強化的關鍵時期，從建立最佳實務到私部門積極參與，從方法學驗證到地理擴張，更開始與永續發展目標（SDGs）產生深度連結，開啟另一階段的重要轉變。
 
-資料來源： [Verra](https://verra.org/the-evolution-of-the-voluntary-carbon-market-to-a-robust-tool-for-tackling-climate-change-a-timeline/) , [Carbon Offset Guide](https://offsetguide.org/) , [Carbon Brief](https://interactive.carbonbrief.org/carbon-offsets-2023/timeline.html) , [TCX \| 碳學堂](https://www.tcx.com.tw/learn/studio/articleContent/402890848e41a9b8018e985809f50207?utm_source=chatgpt.com)
+**參考資訊**：[Verra](https://verra.org/the-evolution-of-the-voluntary-carbon-market-to-a-robust-tool-for-tackling-climate-change-a-timeline/) , [Carbon Offset Guide](https://offsetguide.org/) , [Carbon Brief](https://interactive.carbonbrief.org/carbon-offsets-2023/timeline.html) , [TCX \| 碳學堂](https://www.tcx.com.tw/learn/studio/articleContent/402890848e41a9b8018e985809f50207?utm_source=chatgpt.com)

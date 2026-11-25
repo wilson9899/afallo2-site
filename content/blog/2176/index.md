@@ -55,7 +55,7 @@ tags: []
 
 標準與審核確保碳信用的可信度，可是，這些碳信用如果沒有流通的渠道，它們仍只是帳面上的減排數字。下一篇，我們將探討 **「市場中介與交易服務端」** ，了解碳信用如何在這裡活起來，成為具市場價值的資產。
 
-**參考資訊**：[Bloomberg](https://www.bloomberg.com/news/articles/2023-12-10/wall-street-banks-look-to-carbon-offsets-for-new-profits)．[Climate Focus](https://vcmprimer.org/chapter-8-how-is-the-voluntary-carbon-market-structured)．[AlliedOffsets / Carbon Market Watch](https://carbonmarketwatch.org/wp-content/uploads/2023/02/Stakeholder-Analysis-for-the-Voluntary-Carbon-Market.pdf)．[Verra](https://verra.org/verra-releases-updated-icvcm-ccp-label-guidance/)．[以ICVCM](https://icvcm.org/)．[而在市場的需求端，則有像VCMI](https://vcmintegrity.org/)．[Sylvera](https://www.sylvera.com/evaluate/ratings)  
+**參考資訊**：[Bloomberg](https://www.bloomberg.com/news/articles/2023-12-10/wall-street-banks-look-to-carbon-offsets-for-new-profits)．[Climate Focus](https://vcmprimer.org/chapter-8-how-is-the-voluntary-carbon-market-structured)．[AlliedOffsets / Carbon Market Watch](https://carbonmarketwatch.org/wp-content/uploads/2023/02/Stakeholder-Analysis-for-the-Voluntary-Carbon-Market.pdf)．[Verra](https://verra.org/verra-releases-updated-icvcm-ccp-label-guidance/)．[ICVCM](https://icvcm.org/)．[而在市場的需求端，則有像VCMI](https://vcmintegrity.org/)．[Sylvera](https://www.sylvera.com/evaluate/ratings)  
   
 **系列文章**  
 [Part1 ｜關鍵參與者第一站：專案的啟動與碳信用的誕生「供給端」](/unlocking-the-vcm-maze-an-overview-of-key-players-and-mechanisms-in-the-voluntary-carbon-market/)  

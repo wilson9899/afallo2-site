@@ -57,4 +57,4 @@ tags: []
 
 最終，碳信用的選擇不只是採購決策，更是對風險與信任的判斷。在品質成為主流的市場中，理解不同標準之間的差異，並搭配專案層面的審慎評估，將是企業在自願性碳市場中做出高品質採購決策的關鍵起點，也將直接影響其氣候策略的可信度與長期成效。  
   
-**參考資訊**：[Verra](https://verra.org/)．[Gold Standard](https://www.goldstandard.org/)．[Plan Vivo](https://www.planvivo.org/)．[Architecture for REDD+Transactions](https://www.artredd.org/)．[ICROA](https://icroa.org/endorsed-organisations/)．[以ICVCM](https://icvcm.org/core-carbon-principles/)
+**參考資訊**：[Verra](https://verra.org/)．[Gold Standard](https://www.goldstandard.org/)．[Plan Vivo](https://www.planvivo.org/)．[Architecture for REDD+Transactions](https://www.artredd.org/)．[ICROA](https://icroa.org/endorsed-organisations/)．[ICVCM](https://icvcm.org/core-carbon-principles/)

@@ -31,7 +31,7 @@ tags: []
 
 **為什麼價格差這麼多？其實反映的是「成熟度與風險」**
 
-走到市場端，碳信用成效類型差異最直觀的表現，就是價格。一般而言，「減少或避免排放」類碳信用價格相對親民，交易也較為活絡。以再生能源為例，這類專案技術成熟、案例豐富，方法學經過多次驗證，減排量計算與查核流程也相對穩定，因此投資與履約風險較低，近年在再生能源碳信用在自願行碳市場中的交易價格約為每噸2至3美元左右。
+走到市場端，碳信用成效類型差異最直觀的表現，就是價格。一般而言，「減少或避免排放」類碳信用價格相對親民，交易也較為活絡。以再生能源為例，這類專案技術成熟、案例豐富，方法學經過多次驗證，減排量計算與查核流程也相對穩定，因此投資與履約風險較低，近年在再生能源碳信用在自願性碳市場中的交易價格約為每噸2至3美元左右。
 
 然而，這類碳信用的「額外性」與「基準線合理性」仍常受到檢視。「額外性」指的是減排是否為額外發生的行動；在一些成熟市場，國家政策已要求企業或電力供應商使用一定比例的再生能源，因此單靠購買再生能源碳信用來支撐氣候承諾，其減排可能不被視為額外貢獻。而「基準線合理性」則關注減排量的假設情境是否可信，例如避免森林砍伐的REDD+專案所在區域的砍伐率本就低，專案假設的「如果沒有專案，排放會發生」就不合理，減排效果可能被高估。
 
@@ -55,4 +55,4 @@ tags: []
 
 未來，方法學的成熟度、查驗證的嚴謹性，以及長期碳封存的風險管理，將成為選擇不同類型碳信用的核心因素。選擇碳信用，其實就是在選擇一條氣候路徑。「減少或避免排放」與「碳移除」並非互相取代，而是在不同階段、不同風險承受度與不同氣候目標下的配置選擇。真正重要的問題，不在於「哪一種最好」，而在於每一單位碳信用所代表的氣候成效，以及它在整體減碳路徑中所扮演的角色。
 
-**參考資訊**：[IETA](https://www.ieta.org/)．[Climeworks](https://climeworks.com/)．[ICROA](https://icroa.org/endorsed-organisations/)．[以ICVCM](https://icvcm.org/core-carbon-principles/)．[IPCC AR6](https://www.ipcc.ch/assessment-report/ar6/)．[SBTi](https://sciencebasedtargets.org/net-zero)
+**參考資訊**：[IETA](https://www.ieta.org/)．[Climeworks](https://climeworks.com/)．[ICROA](https://icroa.org/endorsed-organisations/)．[ICVCM](https://icvcm.org/core-carbon-principles/)．[IPCC AR6](https://www.ipcc.ch/assessment-report/ar6/)．[SBTi](https://sciencebasedtargets.org/net-zero)

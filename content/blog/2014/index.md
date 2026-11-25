@@ -19,11 +19,11 @@ tags: []
 
 **標準演變與品質挑戰**
 
-在標準體系方面，VCM經歷一波制度升級與技術創新。不僅既有的標準如Verra的VCS與Gold Standard不斷完善其方法學、強化透明度，也有如Puro.earth等新興標準出現，填補技術型碳移除（Technological carbon removal）領域的空白。自2017年起，包括直接空氣捕捉（Direct air capture）、生物炭（Biochar）等新興技術開始在實際應用上取得突破，並陸續獲得國際企業的青睞。微軟、Google等企業紛紛承諾採購技術型移除碳權，不僅是為了履行淨零承諾，更為提前投資這項仍處於早期階段的創新解方。
+在標準體系方面，VCM經歷一波制度升級與技術創新。不僅既有的標準如Verra的VCS與Gold Standard不斷完善其方法學、強化透明度，也有如Puro.earth等新興標準出現，填補技術型碳移除（Technological carbon removal）領域的空白。自2017年起，包括直接空氣捕捉（Direct air capture）、生物炭（Biochar）等新興技術開始在實際應用上取得突破，並陸續獲得國際企業的青睞。微軟、Google等企業紛紛承諾採購技術型移除碳信用，不僅是為了履行淨零承諾，更為提前投資這項仍處於早期階段的創新解方。
 
 VCM規模逐漸擴長，並在2021年達到交易價值高峰，交易金額高達20億美元。然而，這樣的良景並不持久，隨著市場規模擴大，碳信用品質與額外性問題開始浮上檯面。以REDD專案為例，部分媒體與研究指出這類專案的碳減量效益可能被誇大或評估不準確，引發廣泛質疑與信任危機，此情況直接反映在市場上，導致2022年至2023年間VCM交易量大幅縮減，交易金額下降約56%。
 
-幸好這些質疑並未完全扼殺市場，反而催生更嚴謹的監管、治理機制。2023年前後，Verra陸續修訂相關方法學，取消不符合標準的專案資格，並公告部分第三方驗證機構（VVB）不具備查驗資格，更嚴格把關具爭議的碳信用。同一時期，兩大全新的誠信組織也相繼成立，積極引導市場朝高品質與高透明度方向發展。自願碳市場誠信委員會（Integrity Council for the Voluntary Carbon Market, ICVCM）專注於制定高品質碳權的評估標準；而自願碳市場誠信倡議（Voluntary Carbon. Market Integrity Initiative, VCMI），則聚焦於規範企業如何正確使用碳抵換，確保使用行為符合氣候誠信與減量邏輯。
+幸好這些質疑並未完全扼殺市場，反而催生更嚴謹的監管、治理機制。2023年前後，Verra陸續修訂相關方法學，取消不符合標準的專案資格，並公告部分第三方驗證機構（VVB）不具備查驗資格，更嚴格把關具爭議的碳信用。同一時期，兩大全新的誠信組織也相繼成立，積極引導市場朝高品質與高透明度方向發展。自願性碳市場誠信委員會（Integrity Council for the Voluntary Carbon Market, ICVCM）專注於制定高品質碳信用的評估標準；而自願性碳市場誠信倡議（Voluntary Carbon. Market Integrity Initiative, VCMI），則聚焦於規範企業如何正確使用碳抵換，確保使用行為符合氣候誠信與減量邏輯。
 
 全依賴自願參與的市場中，信任就是一切，沒有買方對碳信用品質的信心，就難以維持穩定的需求；若缺乏參與意願，整個市場也難以持續運作。
 
@@ -37,4 +37,4 @@ VCM規模逐漸擴長，並在2021年達到交易價值高峰，交易金額高�
 
 儘管未來仍充滿挑戰，但正是這一路的累積與實驗，讓我們看見更多可能性，也更有能力共同面對氣候危機所帶來的未來。  
   
-Reference ： [SBTi](https://sciencebasedtargets.org/) . [Puro.earth](https://puro.earth/) . [Carbon Offset Guide](https://offsetguide.org/) . [Verra VVB](https://verra.org/verra-views/beyond-the-headlines-a-constructive-response-to-criticism-of-validation-and-verification-in-the-vcm/) . [CarbonCredits.com](https://carboncredits.com/vcm-voluntary-carbon-market-makeover-in-2024-carbon-credit-trading-drops-25-removals-soar-381/) . [以ICVCM](https://icvcm.org/) . [而在市場的需求端，則有像VCMI](https://vcmintegrity.org/)
+**參考資訊**：[SBTi](https://sciencebasedtargets.org/)．[Puro.earth](https://puro.earth/)．[Carbon Offset Guide](https://offsetguide.org/)．[Verra VVB](https://verra.org/verra-views/beyond-the-headlines-a-constructive-response-to-criticism-of-validation-and-verification-in-the-vcm/)．[CarbonCredits.com](https://carboncredits.com/vcm-voluntary-carbon-market-makeover-in-2024-carbon-credit-trading-drops-25-removals-soar-381/)．[ICVCM](https://icvcm.org/)．[而在市場的需求端，則有像VCMI](https://vcmintegrity.org/)
