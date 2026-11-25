@@ -1,0 +1,42 @@
+# afallo2.com
+
+AllO2 碳市場情報網站。使用 [HugoBlox](https://github.com/HugoBlox/kit) 建置，推到 `main` 後由 GitHub Actions 自動發佈到 GitHub Pages。
+
+## 內容區塊
+
+| 資料夾 | 網站區塊 | 來源排程 |
+|---|---|---|
+| `content/news/` | 市場動態 | 【每日】qcintel 碳市場快訊閱讀（公開版） |
+| `content/reports/weekly/` | 市場週報 | 【每週一】市場資訊週報 |
+| `content/reports/scan/` | 碳市場掃描 | Carbon market weekly scan（每週四，公開版） |
+| `content/blog/` | 文章 | Facebook 專頁周報（每週五） |
+
+## 排程任務如何同步網站
+
+每個任務最後執行一次：
+
+```bash
+cd <afallo2-site 本機路徑>
+git checkout main && git pull
+python tools/publish.py news   公開版.md
+python tools/publish.py weekly 公開版.md --attach 市場資訊週報.docx
+python tools/publish.py scan   公開版.md
+python tools/publish.py blog   文章.md --attach 圖卡.png
+```
+
+- 沒有命中禁止發佈清單：直接推到 `main`，約 2 分鐘後上線。
+- 命中、或找不到清單：改推到 `publish/<類型>-<日期>` 分支，不會上線，需人工審核後合併。
+
+## 禁止發佈清單（不放在這個程式庫）
+
+這是公開程式庫，清單只放在兩個地方：
+
+1. 本機檔案 `~/.afallo2/blocklist.txt`，一行一個字詞，`#` 開頭為註解。`tools/publish.py` 推送前會先比對。
+2. GitHub Secret `PUBLISH_BLOCKLIST`（Settings → Secrets and variables → Actions），逗號或換行分隔。建置時由 `tools/check_blocklist.py` 檢查整個 `content/`，命中就讓建置失敗，網站維持舊版；紀錄只寫出檔名，不寫出字詞。
+
+## 本機預覽
+
+```bash
+pnpm install
+hugo server
+```

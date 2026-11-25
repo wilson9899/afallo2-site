@@ -1,0 +1,6 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: AllO2
+role: 碳市場情報
