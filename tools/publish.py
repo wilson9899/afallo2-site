@@ -19,10 +19,12 @@
    清單來源依序為：環境變數 PUBLISH_BLOCKLIST、--blocklist 指定的檔案、
    ~/.afallo2/blocklist.txt。清單一行一個關鍵字，# 開頭為註解。
    清單絕不放進這個公開程式庫。
-2. 沒有命中：寫入對應資料夾，提交並推送到 main，網站約 2 分鐘後更新。
-3. 有命中：不推送到 main，改推到 publish/<類型>-<日期> 分支，
-   印出命中的關鍵字與建立 PR 的網址，結束碼為 2。
-4. 找不到清單：一律視為命中處理（不推送到 main），避免漏網。
+2. 有命中：整段刪除。含有清單字詞的段落、條列項目、表格列一律刪掉，
+   標題含有字詞則整則不發佈。.docx 附件含有字詞就不附上。
+   刪除後若沒有剩下內容，整則不發佈。
+3. 刪除後再檢查一次，確定沒有任何字詞，才提交並推送到 main，
+   網站約 2 分鐘後更新。
+4. 找不到清單：不發佈，結束碼為 2，避免漏網。
 """
 import argparse
 import os
@@ -79,6 +81,26 @@ def find_hits(text, words):
     return sorted({w for w in words if w.lower() in low})
 
 
+def redact(body, words):
+    """刪除含有清單字詞的段落、條列項目或表格列。回傳 (新內文, 刪除數)。"""
+    out, removed = [], 0
+    for block in re.split(r"(\n\s*\n)", body):
+        if not find_hits(block, words):
+            out.append(block)
+            continue
+        lines = block.split("\n")
+        if all(re.match(r"^\s*([-*+]|\d+[.)]|\|)", l) or not l.strip() for l in lines):
+            # 條列或表格：只刪命中的那幾行
+            kept = [l for l in lines if not find_hits(l, words)]
+            removed += len(lines) - len(kept)
+            out.append("\n".join(kept))
+        else:
+            removed += 1
+    text = "".join(out)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text, removed
+
+
 def split_front_matter(md):
     m = re.match(r"^---\n(.*?)\n---\n?(.*)$", md, re.S)
     if m:
@@ -111,12 +133,6 @@ def git(*args, check=True):
                           capture_output=True, text=True)
 
 
-def repo_web_url():
-    url = git("remote", "get-url", "origin").stdout.strip()
-    m = re.search(r"github\.com[:/](.+?)(?:\.git)?$", url)
-    return f"https://github.com/{m.group(1)}" if m else url
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("kind", choices=KINDS)
@@ -138,16 +154,31 @@ def main():
     # 標題已放進 front matter，移除內文中重複的第一個 # 標題
     body = re.sub(r"^#\s+.+\n+", "", body.lstrip(), count=1)
 
-    # 1. 禁止發佈清單
+    # 1. 禁止發佈清單：命中的內容整段刪除
     words = load_blocklist(a.blocklist)
-    scan_text = title + "\n" + body
-    for att in a.attach:
-        if att.lower().endswith(".docx"):
-            scan_text += "\n" + docx_text(att)
     if words is None:
-        hits = ["（找不到禁止發佈清單）"]
-    else:
-        hits = find_hits(scan_text, words)
+        print("找不到禁止發佈清單，不發佈。")
+        return 2
+    if find_hits(title, words):
+        print("標題含有禁止發佈字詞，整則不發佈。")
+        return 2
+    body, removed = redact(body, words)
+    attaches = []
+    for att in a.attach:
+        if att.lower().endswith(".docx") and find_hits(docx_text(att), words):
+            print(f"附件 {Path(att).name} 含有禁止發佈字詞，不附上。")
+            removed += 1
+            continue
+        attaches.append(att)
+    a.attach = attaches
+    if find_hits(body, words):
+        print("刪除後仍有禁止發佈字詞，不發佈。")
+        return 2
+    if not summarize(body, 1) and not re.search(r"\S", re.sub(r"^#.*$", "", body, flags=re.M)):
+        print("刪除後沒有剩下內容，不發佈。")
+        return 2
+    if removed:
+        print(f"已刪除 {removed} 段含禁止發佈字詞的內容。")
 
     # 2. 寫入頁面
     slug = date if a.kind != "blog" else f"{date}-{re.sub(r'[^0-9A-Za-z一-鿿]+', '-', title).strip('-')[:40]}"
@@ -174,23 +205,13 @@ def main():
     print(f"已寫入 {rel}")
 
     if a.dry_run:
-        print("命中：" + ("、".join(hits) if hits else "無"))
-        return 2 if hits else 0
+        print("（試跑，不提交）")
+        return 0
 
     # 3. 提交並推送
     git("fetch", "origin", "main")
     git("add", str(rel))
     msg = f"{label}：{date}"
-    if hits:
-        branch = f"publish/{a.kind}-{date}"
-        git("checkout", "-B", branch)
-        git("commit", "-m", msg + "（待審核）")
-        git("push", "-u", "origin", branch, "--force")
-        git("checkout", "main")
-        print("命中禁止發佈清單：" + "、".join(hits))
-        print("未上線。已推到分支 " + branch + "，請審核後合併：")
-        print(f"{repo_web_url()}/compare/main...{branch}?expand=1")
-        return 2
     git("commit", "-m", msg)
     r = git("pull", "--rebase", "origin", "main", check=False)
     if r.returncode != 0:
