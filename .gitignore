@@ -68,6 +68,6 @@ Desktop.ini
 *.log
 npm-debug.log*
 
-# 禁止發佈清單只放本機或 GitHub Secret，絕不提交
+# 禁止發佈清單只放本機，絕不提交
 .publish-blocklist*
 blocklist.txt
