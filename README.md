@@ -28,12 +28,9 @@ python tools/publish.py blog   文章.md --attach 圖卡.png
 - 刪除後再檢查一次，確定乾淨才推到 `main`，約 2 分鐘後上線。
 - 找不到清單時不發佈。
 
-## 禁止發佈清單（不放在這個程式庫）
+## 禁止發佈清單
 
-這是公開程式庫，清單只放在兩個地方：
-
-1. 本機檔案 `~/.afallo2/blocklist.txt`，一行一個字詞，`#` 開頭為註解。`tools/publish.py` 推送前會先比對。
-2. GitHub Secret `PUBLISH_BLOCKLIST`（Settings → Secrets and variables → Actions），逗號或換行分隔。建置時由 `tools/check_blocklist.py` 檢查整個 `content/`，命中就讓建置失敗，網站維持舊版；紀錄只寫出檔名，不寫出字詞。
+清單只存在執行排程的電腦上：`~/.afallo2/blocklist.txt`，一行一個字詞，`#` 開頭為註解。不放進這個程式庫，也不放進 GitHub 的任何設定。`tools/publish.py` 推送前在本機比對，找不到清單就不發佈。
 
 ## 本機預覽
 

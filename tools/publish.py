@@ -16,9 +16,9 @@
 
 流程：
 1. 讀取禁止發佈清單，比對全文（含附件 .docx 的文字）。
-   清單來源依序為：環境變數 PUBLISH_BLOCKLIST、--blocklist 指定的檔案、
-   ~/.afallo2/blocklist.txt。清單一行一個關鍵字，# 開頭為註解。
-   清單絕不放進這個公開程式庫。
+   清單來源依序為：--blocklist 指定的檔案、~/.afallo2/blocklist.txt。
+   清單一行一個關鍵字，# 開頭為註解。清單只放在本機，
+   絕不放進這個公開程式庫或 GitHub 的任何設定。
 2. 有命中：整段刪除。含有清單字詞的段落、條列項目、表格列一律刪掉，
    標題含有字詞則整則不發佈。.docx 附件含有字詞就不附上。
    刪除後若沒有剩下內容，整則不發佈。
@@ -48,15 +48,11 @@ KINDS = {
 
 
 def load_blocklist(path_arg):
-    env = os.environ.get("PUBLISH_BLOCKLIST", "")
     text = None
-    if env.strip():
-        text = env
-    else:
-        for p in [path_arg, Path.home() / ".afallo2" / "blocklist.txt"]:
-            if p and Path(p).expanduser().is_file():
-                text = Path(p).expanduser().read_text(encoding="utf-8")
-                break
+    for p in [path_arg, Path.home() / ".afallo2" / "blocklist.txt"]:
+        if p and Path(p).expanduser().is_file():
+            text = Path(p).expanduser().read_text(encoding="utf-8")
+            break
     if text is None:
         return None
     words = []
